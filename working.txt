@@ -1,0 +1,87 @@
+
+# Text Encryptor
+
+-----------------------------
+    Encryption
+-----------------------------
+
+data - Hi
+pass - 12345678
+
+data - 72 105
+pass - 49 50 51 52 53 54 55 56
+rkey - 20
+
+data - 72 105
+pass - 69 70 71 72 73 74 75 76
+rkey - 20
+
+data - 78 114
+pass - 69 70 71 72 73 74 75 76
+rkey - 20
+
+data - 4e 72
+pass - 45 46 47 48 49 4c 4b 4c
+rkey - 20
+
+data - 4e 72
+pass - 45464748494a4b4c
+rkey - 20
+
+data - 4e 72
+pass - 9fac7afe33a7ed8dc094970297d57c759044283b05a873731959cf31d64ff425
+rkey - 14
+
+data    rkey    pass
+4e72    14      9fac7afe33a7ed8dc094970297d57c759044283b05a873731959cf31d64ff425
+
+enctxt - 4e72149fac7afe33a7ed8dc094970297d57c759044283b05a873731959cf31d64ff425
+
+-----------------------------
+    Decryption
+-----------------------------
+
+data - 4e72149fac7afe33a7ed8dc094970297d57c759044283b05a873731959cf31d64ff425
+pass - 12345678
+
+data - 4e 72
+rkey - 14
+pass - 12345678
+
+data - 4e 72
+rkey - 20
+pass - 49 50 51 52 53 54 55 56
+
+data - 4e 72
+rkey - 20
+pass - 69 70 71 72 73 74 75 76
+
+data - 4e 72
+rkey - 20
+pass - 69 70 71 72 73 74 75 76
+
+data - 4e 72
+rkey - 20
+pass - 45 46 47 48 49 4c 4b 4c
+
+data - 4e 72
+pass - 45464748494a4b4c
+rkey - 20
+
+data - 4e 72
+rkey - 20
+pass - 9fac7afe33a7ed8dc094970297d57c759044283b05a873731959cf31d64ff425
+
+data - 78 114
+rkey - 20
+pass - 9fac7afe33a7ed8dc094970297d57c759044283b05a873731959cf31d64ff425
+
+data - 72 105
+rkey - 20
+pass - 9fac7afe33a7ed8dc094970297d57c759044283b05a873731959cf31d64ff425
+
+data - H i
+rkey - 20
+pass - 9fac7afe33a7ed8dc094970297d57c759044283b05a873731959cf31d64ff425
+
+dectxt - Hi

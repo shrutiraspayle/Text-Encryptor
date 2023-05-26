@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.fa {
+    font-size: 22px;
+    margin-right: 15px;
+}
+
+.container {
+    padding: 60px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100vh
+}
+
+
+.container .outer-wrapper {
+    width: 500px;
+    height: 590px;
+    padding: 35px 45px;
+    border-radius: 20px;
+    background-color: #1a1a1aff;
+}
+
+.container .outer-wrapper .ldbtn {
+    margin: 0 10px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.container .outer-wrapper .btn-light {
+    background-color: white;
+    border: 2px solid white;
+}
+
+.container .outer-wrapper .btn-dark {
+    background-color: #1a1a1aff;
+    border: 2px solid white;
+}
+
+.container .outer-wrapper .btn-dark:hover {
+    background-color: white;
+    color: #1a1a1aff;
+}
+
+.container .outer-wrapper .inner-wrapper {
+    height: 100%;
+    margin-top: 30px;
+    padding: 10px 35px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.container .outer-wrapper .inner-wrapper .ldbtn {
+    margin: 20px 10px;
+    font-size: 17px;
+}
+
+.container .outer-wrapper .inner-wrapper .ldbtn .fa {
+    font-size: 20px;
+}
+
+.container .outer-wrapper .inner-wrapper .btn-light {
+    border: 2px solid #1a1a1aff;
+}
+
+.container .outer-wrapper .inner-wrapper .btn-light:hover {
+    background-color: #1a1a1aff;
+    color: white;
+}
+
+.container .outer-wrapper .inner-wrapper .btn-dark {
+    border: 2px solid #1a1a1aff;
+}
+
+.container .outer-wrapper .inner-wrapper .btn-dark:hover {
+    background-color: #1a1a1aff;
+    color: white;
+}
+
+.container .outer-wrapper .inner-wrapper .drag-area {
+    width: 100%;
+    height: 100px;
+    padding: 0 20px;
+    margin-top: 5px;
+    border: 2px dashed #666666ff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .outer-wrapper .inner-wrapper .drag-area .drag-area-context {
+    font-size: 18px !important;
+    color: #1a1a1aff;
+    word-break: break-all;
+}
+
+.container .outer-wrapper .inner-wrapper .drag-area span {
+    font-size: 16px;
+    color: #1a1a1aff;
+    padding: 3px 0;
+}
+
+.container .outer-wrapper .inner-wrapper .drag-area .a-choose-file {
+    padding: 0;
+    cursor: pointer;
+    color: blue;
+    text-decoration: none;
+    border: 0;
+}
+
+.container .outer-wrapper .inner-wrapper .drag-area .a-choose-file:hover{
+    text-decoration: underline;
+}
+
+.container .outer-wrapper .inner-wrapper input {
+    padding: 10px 16px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    outline: none;
+}
+
+.container .outer-wrapper .inner-wrapper input:focus {
+    border: 1px solid black;
+}
+
+.container .outer-wrapper .inner-wrapper .btn-dark-small,
+.container .outer-wrapper .inner-wrapper .btn-download {
+    width: 140px;
+    height: 45px;
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.container .outer-wrapper .inner-wrapper .btn-dark-small:hover,
+.container .outer-wrapper .inner-wrapper .btn-download:hover {
+    background-color: rgb(41, 41, 41);
+    border: 2px solid rgb(41, 41, 41);
+}
+
+.container .outer-wrapper .inner-wrapper .btn-dark-small .fa,
+.container .outer-wrapper .inner-wrapper .btn-download .fa {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.container .outer-wrapper textarea {
+    margin-top: 5px;
+    height: 100px;
+    padding: 10px 15px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    outline: none;
+    resize: none;
+}
+
+.container .outer-wrapper .inner-wrapper .result {
+    padding: 15px 5px;
+    height: 460px;
+}
+
+.container .outer-wrapper .inner-wrapper .result label {
+    padding: 0 5px;
+    margin-bottom: 12px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.container .outer-wrapper .inner-wrapper .result label .fa {
+    font-size: 30px;
+}
+
+.container .outer-wrapper .inner-wrapper .result textarea {
+    height: 300px;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.enabled{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.disabled{
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+
+@media(max-width:520px) {
+
+    body {
+        background-color: #1a1a1aff;
+    }
+
+    .container {
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+    }
+
+    .container .row {
+        flex-direction: column;
+    }
+
+    .container .outer-wrapper {
+        width: 100%;
+        height: 100%;
+        padding: 30px;
+        border-radius: 0;
+    }
+
+    .container .outer-wrapper .ldbtn {
+        padding: 13px;
+        margin: 0 0 20px 0 !important;
+        font-size: 19px;
+    }
+
+    .container .outer-wrapper .inner-wrapper {
+        margin-top: 5px;
+        padding-top: 30px;
+    }
+
+    .container .outer-wrapper .inner-wrapper .ldbtn {
+        margin: 0 0 15px 0 !important;
+    }
+
+    .container .outer-wrapper .inner-wrapper .btn-dark-small,
+    .container .outer-wrapper .inner-wrapper .btn-download {
+        margin: 20px 0 !important;
+    }
+
+}
